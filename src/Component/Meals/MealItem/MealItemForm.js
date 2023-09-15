@@ -15,6 +15,7 @@ const submitHandler=event=>{
         setAmountIsValid(false);
     }
     props.onAddToCart(enteredAmountNum);
+    console.log(enteredAmountNum)
 }
 
   return (
@@ -27,7 +28,7 @@ const submitHandler=event=>{
             defaultValue:'1'
         }}/>
         <button>+ Add</button>
-        {!amountIsValid && <p>Please enter Valid amount </p>}
+        {!amountIsValid && ''}
     </form>
   )
 }
